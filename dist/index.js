@@ -348,6 +348,7 @@ async function handleStreamable(req, res) {
         const serverInstance = createServerInstance();
         const transport = new StreamableHTTPServerTransport({
             sessionIdGenerator: () => randomUUID(),
+            enableJsonResponse: true, // Enable JSON responses for serverless compatibility
             onsessioninitialized: (sessionId) => {
                 streamableSessions.set(sessionId, { transport, server: serverInstance });
                 console.log('New session created:', sessionId);
