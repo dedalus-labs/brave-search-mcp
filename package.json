@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/windsornguyen/brave-search-mcp#readme",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "1.16.0",
+    "@modelcontextprotocol/sdk": "1.29.0",
     "@playwright/test": "^1.54.2",
     "axios": "^1.11.0",
     "dotenv": "^17.2.1"
